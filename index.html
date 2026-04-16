@@ -3,7 +3,6 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- 🔤 FUENTE NUEVA -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
     <title>Amigos de RAE</title>
@@ -23,12 +22,23 @@
             -moz-osx-font-smoothing: grayscale;
         }
 
-        h1 {
+        /* 🔷 TÍTULO CON LOGOS */
+        .titulo {
             margin-top: 40px;
             color: #003366;
             font-size: 38px;
             font-weight: 700;
             letter-spacing: 1px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .logo {
+            width: 55px;
+            height: 55px;
         }
 
         .vivo {
@@ -42,7 +52,6 @@
             border-radius: 10px;
             font-size: 20px;
             font-weight: bold;
-
             animation: pulso 1.5s infinite;
         }
 
@@ -91,7 +100,12 @@
 
 <body>
 
-    <h1>Amigos de RAE</h1>
+    <!-- 🔷 TÍTULO CON LOGOS -->
+    <h1 class="titulo">
+        <img src="Logo_RAE.avif" class="logo">
+        Amigos de RAE
+        <img src="Logo_RAE.avif" class="logo">
+    </h1>
 
     <a class="vivo" href="https://www.radionacional.com.ar/reproductor/reproductor_rae_n20.php" target="_blank">
         🔴 EN VIVO
@@ -111,19 +125,7 @@
 
     <footer>
         <p>
-            El presente sitio web constituye una iniciativa independiente, de carácter estrictamente informativo y sin fines de lucro, destinada a la difusión de contenidos de la radiodifusión argentina hacia el exterior, con el objeto de promover el acceso a la cultura, la información y la diversidad lingüística.
-        </p>
-
-        <p>
-            En tal sentido, la actividad desarrollada se encuentra amparada por el derecho a la libertad de expresión y de prensa consagrados en el artículo 14 de la Constitución de la Nación Argentina, así como por los principios establecidos en el artículo 32, que garantizan la libre circulación de ideas sin censura previa.
-        </p>
-
-        <p>
-            Asimismo, se reconoce la relevancia de los medios públicos como instrumentos fundamentales para asegurar el pluralismo informativo, la identidad cultural y el acceso equitativo a la información, en concordancia con los principios democráticos que sustentan el orden constitucional.
-        </p>
-
-        <p>
-            Este sitio no posee afiliación oficial con organismos estatales ni entidades comerciales. Los contenidos enlazados pertenecen a sus respectivos titulares y son utilizados únicamente con fines de referencia y difusión, sin que ello implique apropiación ni modificación de los mismos.
+            El presente sitio web constituye una iniciativa independiente, de carácter estrictamente informativo y sin fines de lucro.
         </p>
 
         <p>
@@ -156,10 +158,6 @@ setInterval(() => {
         el.innerText = toRoman(parseInt(el.innerText));
     }
 }, 1000);
-</script>
-
-</body>
-</html>
 </script>
 
 </body>

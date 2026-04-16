@@ -20,17 +20,19 @@
         }
 
         .vivo {
-            display: block;
-            width: 260px;
-            margin: 30px auto;
-            padding: 15px;
-            background-color: red;
-            color: white;
-            text-decoration: none;
-            border-radius: 10px;
-            font-size: 20px;
-            font-weight: bold;
-        }
+    display: block;
+    width: 260px;
+    margin: 30px auto;
+    padding: 15px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+
+    animation: pulso 1.5s infinite;
+}
 
         .grid {
             display: grid;
@@ -66,6 +68,11 @@
             margin-left: auto;
             margin-right: auto;
         }
+        @keyframes pulso {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
            </style>
 </head>
 

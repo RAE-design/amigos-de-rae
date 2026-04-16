@@ -14,35 +14,42 @@
             color: #003366;
         }
 
-        .container {
-            margin-top: 30px;
+        .vivo {
+            display: block;
+            width: 260px;
+            margin: 30px auto;
+            padding: 15px;
+            background-color: red;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            max-width: 800px;
+            margin: auto;
         }
 
         .boton {
-            display: block;
-            width: 250px;
-            margin: 10px auto;
             padding: 15px;
             background-color: white;
             color: #003366;
             text-decoration: none;
             border-radius: 10px;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: bold;
-            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
         }
 
         .boton:hover {
             background-color: #e6f2ff;
-        }
-
-        .vivo {
-            background-color: red;
-            color: white;
-        }
-
-        .vivo:hover {
-            background-color: darkred;
+            transform: scale(1.05);
+            transition: 0.2s;
         }
     </style>
 </head>
@@ -50,20 +57,20 @@
 
     <h1>Amigos de RAE</h1>
 
-    <div class="container">
+    <a class="vivo" href="https://www.radionacional.com.ar/reproductor/reproductor_rae_n20.php" target="_blank">
+        🔴 EN VIVO
+    </a>
 
-        <a class="boton vivo" href="#">🔴 EN VIVO</a>
+    <div class="grid">
+        <a class="boton" href="https://www.radionacional.com.ar/category/espanol/" target="_blank">🇪🇸 Castellano</a>
+        <a class="boton" href="https://www.radionacional.com.ar/category/portugues/" target="_blank">🇧🇷 Portugués</a>
+        <a class="boton" href="https://www.radionacional.com.ar/category/english/" target="_blank">🇬🇧 Inglés</a>
+        <a class="boton" href="https://www.radionacional.com.ar/category/francais/" target="_blank">🇫🇷 Francés</a>
 
-        <a class="boton" href="#">Botón 1</a>
-        <a class="boton" href="#">Botón 2</a>
-        <a class="boton" href="#">Botón 3</a>
-        <a class="boton" href="#">Botón 4</a>
-        <a class="boton" href="#">Botón 5</a>
-        <a class="boton" href="#">Botón 6</a>
-        <a class="boton" href="#">Botón 7</a>
-        <a class="boton" href="#">Botón 8</a>
-        <a class="boton" href="#">Botón 9</a>
-
+        <a class="boton" href="https://www.radionacional.com.ar/category/italiano/" target="_blank">🇮🇹 Italiano</a>
+        <a class="boton" href="https://www.radionacional.com.ar/category/deutsch/" target="_blank">🇩🇪 Alemán</a>
+        <a class="boton" href="https://www.radionacional.com.ar/category/rae/日本語/" target="_blank">🇯🇵 Japonés</a>
+        <a class="boton" href="https://www.radionacional.com.ar/category/rae/华语/" target="_blank">🇨🇳 Chino</a>
     </div>
 
 </body>
